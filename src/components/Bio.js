@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Home from './components/Home'; 
 
-class App extends Component {
+
+class Bio extends Component {
   render() {
     return (
       <div>
-        <Home />
+        This is biography
       </div>
     );
   }
 }
 
-export default App;
+export default Bio;
