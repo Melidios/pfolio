@@ -6,7 +6,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 
@@ -23,7 +22,7 @@ const styles = {
     marginRight: 20,
   },
   bar: {
-    background: 'linear-gradient(45deg, #b388ff 30%, #7e57c2 90%)',
+    background: '#cfd8dc',
     color: 'white',
     fontWeight: 'bold',
   },
@@ -61,7 +60,7 @@ class Navbar extends React.Component {
 
     return (
       <div className={classes.root}>
-        <AppBar position="fixed" className={classes.bar}>
+        <AppBar position="relative" className={classes.bar}>
           <Toolbar>
             <IconButton className={classes.menuButton}            
                   aria-owns={open ? 'menu-appbar' : undefined}
@@ -93,15 +92,6 @@ class Navbar extends React.Component {
             <Typography variant="h6" color="inherit" className={classes.grow}>
               Home
             </Typography>
-            {auth && (
-              <div>
-                <IconButton
-                  
-                >
-                  <AccountCircle />
-                </IconButton>
-              </div>
-            )}
           </Toolbar>
         </AppBar>
       </div>
