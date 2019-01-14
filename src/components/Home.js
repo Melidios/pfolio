@@ -7,14 +7,14 @@ import Particles from 'react-particles-js';
 import '@material-ui/core/colors';
 
 const style = {
-    position: 'relative',
+    position: 'fixed',
     width: '100%',
     height: '100%',
     background: 'none',
-    'backgroundImage': 'url("")',
-    'backgroundRepeat': 'no-repeat',
-    'backgroundSize': 'cover',
-    'backgroundPosition': '50% 50%',
+    backgroundImage: 'url("")',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundPosition: '50% 50%',
 }
 
 class Home extends Component {
@@ -22,7 +22,7 @@ class Home extends Component {
     return (
       <div>
           <Navbar />
-            <div style={{background: 'linear-gradient(35deg, #cfd8dc 30%, #eceff1 90%)', display: 'block'}}>
+            <div style={{background: 'linear-gradient(35deg, #cfd8dc 30%, #eceff1 90%)', paddingTop:'2em', paddingBottom:'5em'}}>
                 <Particles
                         style={style}
                         params={{
@@ -63,7 +63,7 @@ class Home extends Component {
                                     "random": true,
                                     "anim": {
                                     "enable": false,
-                                    "speed": 80,
+                                    "speed": 10,
                                     "size_min": 0.1,
                                     "sync": false
                                     }
@@ -73,7 +73,7 @@ class Home extends Component {
                                 "distance": 150,
                                 "color": "#ffffff",
                                 "opacity": 0.4,
-                                "width": 1
+                                "width": 3
                             },
                             "move": {
                                 "enable": true,
@@ -84,7 +84,7 @@ class Home extends Component {
                                 "out_mode": "out",
                                 "bounce": false,
                                 "attract": {
-                                "enable": false,
+                                "enable": true,
                                 "rotateX": 1200,
                                 "rotateY": 2200
                                 }
@@ -94,7 +94,7 @@ class Home extends Component {
                             "events": {
                                 "onhover": {
                                 "enable": true,
-                                "mode": "grab"
+                                "mode": "repulse"
                                 },
                                 "onclick": {
                                 "enable": true,
@@ -132,11 +132,11 @@ class Home extends Component {
                         }}
                         
             />
-        </div>    
-              <h1 >Welcome to Kseniia Portfolio</h1>
-          <Bio  style={{position:'absolute'}}/>
-          <Projects />
-          <Footer />
+          <h1 style={{textAlign:'center', color:'white'}}>Welcome to Kseniia Portfolio</h1>
+        </div>
+        <Bio  style={{position:'absolute'}}/>
+        <Projects />
+        <Footer />    
       </div>
     );
   }
