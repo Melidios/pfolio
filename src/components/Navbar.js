@@ -22,7 +22,7 @@ const styles = {
     marginRight: 20,
   },
   bar: {
-    background: '#cfd8dc',
+    background: '#FD436B',
     color: 'white',
     fontWeight: 'bold',
   },
