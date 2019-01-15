@@ -13,8 +13,9 @@ class Home extends Component {
     return (
       <div>
           <Navbar />
+            <h1 style={{textAlign:'center', position:'absolute', color:'white', left:'0', right:'0', margin:'0', paddingTop:'3em'}}>Welcome to Kseniia Portfolio</h1>  
                 <Particles
-                        style={{background: 'linear-gradient(35deg, #607d8b 30%, #cfd8dc 90%)'}}
+                        style={{background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'}}
                         params={{
                             "particles": {
                               "number": {
@@ -127,7 +128,6 @@ class Home extends Component {
                           }}
                         
             />
-          <h1 style={{textAlign:'center'}}>Welcome to Kseniia Portfolio</h1>
         <Bio  style={{position:'absolute'}}/>
         <Projects />
         <Footer />    
