@@ -128,7 +128,7 @@ class Home extends Component {
                           }}
                         
             />
-        <Bio  style={{position:'absolute'}}/>
+        <Bio />
         <Projects />
         <Footer />    
       </div>
