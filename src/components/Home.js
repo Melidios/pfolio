@@ -128,8 +128,10 @@ class Home extends Component {
                           }}
                         
             />
-        <Bio />
-        <Projects />
+        <div style={{padding: '0 15px 0 15px'}}>
+          <Projects />
+          <Bio />
+        </div>  
         <Footer />    
       </div>
     );
