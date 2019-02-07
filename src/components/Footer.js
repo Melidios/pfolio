@@ -11,6 +11,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 const styles = theme => ({
 
   appBar: {
+    height: '15em',
     top: 'auto',
     bottom: 0,
     background: 'linear-gradient(to bottom, rgba(253, 67, 107, 1), rgba(253, 67, 107, 0))',
@@ -37,9 +38,7 @@ function Footer(props) {
       <AppBar position="relative" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <div>
-            <IconButton color="inherit">
-              <MoreIcon />
-            </IconButton>
+
           </div>
         </Toolbar>
       </AppBar>
